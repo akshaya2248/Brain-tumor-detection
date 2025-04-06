@@ -1,0 +1,465 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", serif;
+}
+
+.parent {
+  margin: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  background-color: black;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navleft {
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+input.upload {
+  width: 100%;
+}
+#myButton {
+  width: 100%;
+}
+
+.navright ul {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+}
+
+.navright li {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navigation li:hover {
+  background-color: #444;
+}
+
+.main-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.login-container {
+  text-align: center;
+  padding: 20px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container input {
+  width: 93%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #666;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #888;
+}
+
+.signup {
+  margin-top: 10px;
+}
+
+.signup a {
+  color: purple;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.video-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-container video {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  width: 90%;
+}
+
+.content .card {
+  background-color: white;
+  color: black;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content .card:nth-child(1) {
+  width: 30%;
+}
+
+.content .card:nth-child(2) {
+  width: 70%;
+}
+
+.brain-image {
+  margin: 20px auto;
+}
+
+.brain-image img {
+  max-width: 300px;
+  display: block;
+}
+
+.child {
+  display: flex;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.left {
+  flex: 1;
+  padding: 1em;
+  margin: auto;
+}
+
+.left h3 {
+  font-weight: 100;
+  font-size: 3em;
+}
+
+.left h4 {
+  font-weight: 200;
+  font-size: 1em;
+}
+
+.right {
+  flex: 1;
+  margin: auto;
+  padding: 1em;
+}
+
+.right input,
+button.upload {
+  margin: 1em;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.upload {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 1em;
+  color: white;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 1em;
+}
+
+#img-view,
+.container img {
+  height: 500px;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgb(62, 62, 62);
+}
+
+h4.desc {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.container img {
+  height: 500px;
+  animation: fadeInRight 1s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+
+#dropArea {
+  cursor: pointer;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+
+.uploadimages {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.historyli {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.historyli img {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.historyul {
+  width: 80%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+h4.bolddesc {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.avatar-container {
+  position: relative;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4a6fa5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.avatar:hover {
+  background-color: #3a5a80;
+  transform: scale(1.05);
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.menu-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  font-weight: 600;
+  color: #333;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+li.avatar-container {
+  padding: 0;
+}
+
+/* History Page Styles */
+.history-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.history-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.history-header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.history-subtitle {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+.history-empty {
+  text-align: center;
+  padding: 3rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  color: #7f8c8d;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.history-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.history-image-container {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.history-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.history-card:hover .history-image {
+  transform: scale(1.05);
+}
+
+.history-details {
+  padding: 1.2rem;
+}
+
+.history-result {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Color coding for different results */
+.history-result.glioma {
+  color: #3498db;
+}
+
+.history-result.meningioma {
+  color: #2ecc71;
+}
+
+.history-result.pituitary {
+  color: #9b59b6;
+}
+
+.history-result.notumor {
+  color: #f39c12;
+}
+
+.history-date {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .history-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .history-container {
+    padding: 1rem;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+}
